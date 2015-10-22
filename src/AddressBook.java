@@ -16,11 +16,8 @@ public class AddressBook {
 		}
 	}
 	
-	public BuddyInfo removeBuddy(int i){
-		if (i >= 0 && i < buddies.size()){
-			return buddies.remove(i);
-		}
-		return null;
+	public void removeBuddy(BuddyInfo b){
+		buddies.remove(b);
 	}
 	
 	public List<BuddyInfo> getBuddies() {
